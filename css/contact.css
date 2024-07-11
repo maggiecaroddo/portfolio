@@ -1,0 +1,51 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background-contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    margin: 0;
+}
+
+.text {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:calc(10px + 1.2vw);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+a:hover span {
+    color: #D4C85D;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../img/background-contact-min.png);
+        background-size: cover;
+    }
+    .text {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        text-align: center;
+        font-size:calc(9px + 1.0vw);
+    }
+}

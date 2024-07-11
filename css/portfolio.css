@@ -1,0 +1,168 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background-portfolio.png);
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: 100vw auto;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+a:hover span {
+    color: #FFAD2E;
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        text-align: center;
+        font-size:calc(9px + 1.0vw);
+    }
+}
+
+.element-background {
+    background-color: #FBEAD6;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #261111;
+    /*padding: 12px 12px;*/
+    font-family: "brown-font", sans-serif;
+    color: #261111;
+    cursor: pointer;
+    border-radius: 22px;
+    font-size: calc(100vw / 60);
+    width: 85vw;
+    height: 21.5vw;
+    position: relative;
+    margin: 1vw;
+}
+.cover-photo {
+    height: 17vw;
+    float: left;
+    margin: 2vw;
+}
+.written {
+    width: 42%;
+    margin: auto;
+    padding: 2vw;
+    height: 21.5vw;
+    position: relative;
+}
+
+.categories {
+    margin: auto;
+    padding: 2vw;
+    height: 21.5vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.category {
+    background-color: #FBEAD6;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3D6A51;
+    padding: 10px 16px;
+    font-family: "brown-font", sans-serif;
+    font-style: italic;
+    color: #3D6A51;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: calc(100vw / 60);
+    cursor: default;
+    float: right;
+    margin-left: 0.5vw;
+}
+.category:hover {
+    color: #3D6A51;
+    background-color: #D4C85D;
+}
+
+.title {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For phones: */
+    .title {
+        font-size: calc(100vw / 56);
+        margin: 0.5vw 0 0.5vw 0;
+    }
+    .company {
+        font-size: calc(100vw / 64);
+    }
+    .small-text{
+        font-size: calc(100vw / 68);
+    }
+    .button {
+        font-size: calc(100vw / 72);
+        padding: 2px 10px;
+        border-radius: 6px;
+    }
+    .category {
+        font-size: calc(100vw / 72);
+        padding: 2px 8px;
+        border-radius: 6px;
+    }
+    .element-background {
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .title {
+        font-size: calc(100vw / 54);
+        margin: 0.5vw 0 0.5vw 0;
+    }
+    .company {
+        font-size: calc(100vw / 74);
+    }
+    .small-text {
+        font-size: calc(100vw / 78);
+    }
+    .button {
+        font-size: calc(100vw / 82);
+        padding: 8px 24px;
+        border-radius: 12px;
+    }
+    .category {
+        font-size: calc(100vw / 82);
+        padding: 8px 14px;
+        border-radius: 12px;
+    }
+    .element-background {
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (min-width: 935px) {
+    /* For desktop: */
+    .title {
+        font-size: calc(100vw / 52);
+        margin: 1vw 0 1vw 0;
+    }
+    .company {
+        font-size: calc(100vw / 84);
+    }
+    .small-text {
+        font-size: calc(100vw / 88);
+    }
+    .button {
+        font-size: calc(100vw / 92);
+        padding: 12px 32px;
+    }
+}

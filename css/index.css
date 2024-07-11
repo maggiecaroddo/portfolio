@@ -1,0 +1,66 @@
+body {
+    width: 100vw;
+    height: auto;
+    background-image: url(../img/background-index.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    margin: 0;
+}
+
+.title, .subtitle {
+    width: 70vw;
+    text-align: center;
+    margin: auto;
+    color: #3D6A51;
+}
+.body {
+    width: 70vw;
+    text-align: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For phones: */
+    .title {
+        font-size: calc(100vw / 12)
+    }
+    .subtitle {
+        font-size: calc(100vw / 28)
+    }
+    .body, .button {
+        font-size: calc(100vw / 64);
+    }
+    body {
+        background-position: top;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .title {
+        font-size: calc(100vw / 14)
+    }
+    .subtitle {
+        font-size: calc(100vw / 30)
+    }
+    .body, .button {
+        font-size: calc(100vw / 65);
+    }
+    body {
+        background-position: top;
+    }
+}
+
+@media only screen and (min-width: 935px) {
+    /* For desktop: */
+    .title {
+        font-size: calc(100vw / 16)
+    }
+    .subtitle {
+        font-size: calc(100vw / 32)
+    }
+    .body, .button {
+        font-size: calc(100vw / 66);
+    }
+}

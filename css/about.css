@@ -1,0 +1,64 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background-about.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.text {
+    width: 75%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+    .content {
+        transform: translateY(0);
+    }
+    img {
+        padding-top: 0px;
+        max-width: 250px;
+    }
+    body {
+        background-image: none;
+    }
+    .main {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 600px) {
+    .main {
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 935px) {
+    .main {
+        height: calc(100vh - 46px);
+    }
+}
